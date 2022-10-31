@@ -1,0 +1,35 @@
+#content {
+  text-align: center;
+  font-size: 26px;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(135deg, rgba(107, 107, 107,0.06) 0%, rgba(107, 107, 107,0.06) 50%,rgba(202, 202, 202,0.06) 50%, rgba(202, 202, 202,0.06) 100%),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20)) repeat;
+  background-size: 50px 50px;
+  width: 200vw;
+  height: 200vh;
+  animation-name: MOVE-BG;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes MOVE-BG {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100vw,-100vh);
+  }
+}
+
